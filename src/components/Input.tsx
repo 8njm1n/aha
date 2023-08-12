@@ -1,4 +1,4 @@
-import React, { forwardRef, MouseEventHandler } from "react";
+import { forwardRef, MouseEventHandler } from 'react';
 
 const Input = forwardRef<
   HTMLInputElement,
@@ -8,7 +8,7 @@ const Input = forwardRef<
     value?: string;
     onChange?: (value: string) => void;
     label?: string;
-    placeholder?: string;
+    placeholder?: string;  
     type?: string;
   }
 >((props, ref) => {
@@ -19,7 +19,7 @@ const Input = forwardRef<
     label,
     placeholder,
     onClick,
-    type = "text",
+    type = 'text',
   } = props;
 
   return (
@@ -37,4 +37,5 @@ const Input = forwardRef<
     </div>
   );
 });
+
 export default Input;
