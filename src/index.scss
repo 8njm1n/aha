@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin shadow-outline($color) {
+  box-shadow: 0 0 0 3px $color inset;
+}
+
+@layer components {
+  .textfield {
+    // @apply relative;
+    position: relative;
+    label {
+      @apply absolute bg-darkModeBg text-white text-xs px-1;
+      left: 12px;
+      top: -2px;
+      line-height: 0.75rem;
+    }
+    input {
+      @apply w-full bg-transparent outline-none py-[calc(1rem+1px)] px-3 text-white shadow-outline rounded-[8px];
+      width: 100%;
+      &:focus {
+        @include shadow-outline(white);
+        &:not([value=""]) {
+          @include shadow-outline(#00a3ff);
+        }
+      }
+    }
+  }
+}
