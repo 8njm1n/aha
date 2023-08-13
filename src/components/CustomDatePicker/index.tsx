@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
-import Input from '../Input';
+import Input from 'components/Input';
 import Footer from './_footer';
 import Header from './_header';
 
