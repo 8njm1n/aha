@@ -16,7 +16,7 @@ The project is built with React and TypeScript, utilizing Tailwind CSS for styli
 
 Here's a glimpse of what the project looks like:
 
-![Demo Image](/demo.png)
+![Demo Image](https://github.com/8njm1n/aha/blob/main/public/images/demo.png?raw=true)
 
 You can interact with the live demo [here](https://8njm1n.github.io/aha/).
 
