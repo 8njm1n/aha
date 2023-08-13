@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import Input from '../Input';
+import Footer from './_footer';
+import Header from './_header';
 
 function CustomDatePicker(props: { label: string }) {
   const { label } = props;
@@ -30,7 +32,20 @@ function CustomDatePicker(props: { label: string }) {
         yearItemNumber={20}
         showYearPicker={showYearPicker}
         shouldCloseOnSelect={false}
+        renderCustomHeader={(headerProps) => (
+          <Header
+            {...headerProps}
+            showYearPicker={showYearPicker}
+            setShowYearPicker={setShowYearPicker}
+          />
+        )}
       >
+        <Footer
+          setSelectedDate={setSelectedDate}
+          tempDate={tempDate}
+          setTempDate={setTempDate}
+          setOpen={setOpen}
+        />
       </DatePicker>
     </>
   );
