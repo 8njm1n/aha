@@ -2,6 +2,7 @@
   "name": "aha",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://8njm1n.github.io/aha/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

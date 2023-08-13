@@ -1,6 +1,24 @@
 # Aha by Benjamin - README
 
-Welcome to **Aha by Benjamin** project! This is a simple README to help you get started with the project using Yarn.
+Welcome to **Aha by Benjamin** project! 
+
+This project contains two major components:
+
+1. **Password Input:**
+   - This component checks the provided rules as you type, ensuring that the entered password meets the required criteria.
+
+2. **Date Input with Calendar:**
+   - This component provides a convenient date input field accompanied by a calendar for easier date selection.
+
+The project is built with React and TypeScript, utilizing Tailwind CSS for styling.
+
+## Demo
+
+Here's a glimpse of what the project looks like:
+
+![Demo Image](/demo.png)
+
+You can interact with the live demo [here](https://8njm1n.github.io/aha/).
 
 ## Cloning and Installation
 
