@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import CustomDatePicker from 'components/CustomDatePicker';
 import Input from 'components/Input';
 import TextValidationList from 'components/TextValidationList';
 import { PASSWORD_RULES } from 'constant';
 
-const Home = () => {
+function Home() {
   const [password, setPassword] = useState('');
 
   return (
@@ -20,8 +21,11 @@ const Home = () => {
           <TextValidationList text={password} rules={PASSWORD_RULES} />
         </div>
       </div>
+      <div className="w-[335px] mx-auto">
+        <CustomDatePicker label="Birthday" />
+      </div>
     </div>
   );
-};
+}
 
 export default Home;

@@ -1,17 +1,16 @@
 import { forwardRef, MouseEventHandler } from 'react';
 
-const Input = forwardRef<
-  HTMLInputElement,
-  {
-    editable?: boolean;
-    onClick?: MouseEventHandler<HTMLInputElement>;
-    value?: string;
-    onChange?: (value: string) => void;
-    label?: string;
-    placeholder?: string;  
-    type?: string;
-  }
->((props, ref) => {
+type InputProps = {
+  editable?: boolean;
+  onClick?: MouseEventHandler<HTMLInputElement>;
+  value?: string;
+  onChange?: (value: string) => void;
+  label?: string;
+  placeholder?: string;
+  type?: string;
+};
+
+const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   const {
     editable = false,
     value,
