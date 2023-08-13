@@ -6,7 +6,7 @@ type TextValidationListProps = {
   text: string;
 };
 
-const TextValidationList = (props: TextValidationListProps) => {
+function TextValidationList(props: TextValidationListProps) {
   const { rules, text } = props;
   const [validatFlags, setValidatFlags] = useState<boolean[]>([]);
 
@@ -36,6 +36,6 @@ const TextValidationList = (props: TextValidationListProps) => {
       </ul>
     </div>
   );
-};
+}
 
 export default TextValidationList;
