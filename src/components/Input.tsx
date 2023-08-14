@@ -22,7 +22,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   } = props;
 
   return (
-    <div className="textfield">
+    <div className="textfield font-ubuntu">
       {label && <label>{label}</label>}
       <input
         onClick={onClick}
@@ -33,15 +33,17 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
         type={type}
         placeholder={placeholder}
       />
-      {type === 'password' && (
-        <div className="password-mask absolute top-0 left-0 right-0 bottom-0 px-3 py-5 pointer-events-none tracking-[1px]">
-          {Array(value?.length)
-            .fill(true)
-            .map(() => '*')}
-        </div>
-      )}
+      <PasswordMask length={value?.length} />
     </div>
   );
 });
+
+const PasswordMask = (props: { length?: number }) => (
+  <div className="password-mask absolute top-0 left-0 right-0 bottom-0 px-3 py-5 pointer-events-none tracking-[0.15px]">
+    {Array(props.length)
+      .fill(true)
+      .map(() => '*')}
+  </div>
+);
 
 export default Input;

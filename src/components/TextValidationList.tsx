@@ -17,7 +17,7 @@ function TextValidationList(props: TextValidationListProps) {
   }, [rules, text]);
   return (
     <div
-      className="py-2 rounded-xl bg-[#242424]"
+      className="py-2 rounded-xl bg-[#242424] font-ubuntu"
       style={{ boxShadow: '4px 4px 20px rgba(0, 0, 0, 0.3)' }}
     >
       <ul>
@@ -29,7 +29,7 @@ function TextValidationList(props: TextValidationListProps) {
               <div className="pl-[12px] pr-[10px]">
                 {isValid ? <CheckFill /> : <Check />}
               </div>
-              <span className="py-[9.5px] leading-[21px]">{message}</span>
+              <span className="py-[9.5px]">{message}</span>
             </li>
           );
         })}
