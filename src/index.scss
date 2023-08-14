@@ -34,6 +34,9 @@
         }
       }
       &[type='password'] {
+        &::placeholder {
+          letter-spacing: initial;
+        }
         letter-spacing: 2.15px;
         caret-color: white;
         color: transparent;
