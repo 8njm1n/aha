@@ -12,9 +12,9 @@ function Footer(props: FooterProps) {
 
   return (
     <div>
-      <div className="flex justify-end w-full text-white">
+      <div className="flex justify-end w-full text-white leading-6 font-bold text-sm">
         <button
-          className="mr-[70px] text-sm leading-[2]"
+          className="mr-[38px] px-4 py-2"
           onClick={() => {
             setTempDate(undefined);
             setOpen(false);
@@ -31,9 +31,9 @@ function Footer(props: FooterProps) {
 
             setOpen(false);
           }}
-          className="mr-[27px] text-sm leading-loose"
+          className="mr-2.5 px-4 py-2"
         >
-          Ok
+          OK
         </button>
       </div>
     </div>

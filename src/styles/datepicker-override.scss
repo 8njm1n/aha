@@ -7,8 +7,13 @@ $primary: #00a3ff;
 .react-datepicker-popper {
   padding-top: 14px !important;
 }
+.react-datepicker__children-container {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
 .react-datepicker {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   padding: 17px 16px 16px;
   background-color: #1b1b1b !important;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
@@ -23,13 +28,13 @@ $primary: #00a3ff;
     border: none;
     padding: 0;
   }
-  [class$="day-names"] {
+  [class$='day-names'] {
     line-height: 13px;
     border-bottom: none;
     margin-bottom: 12px;
     display: flex;
     column-gap: 6px;
-    [class$="day-name"] {
+    [class$='day-name'] {
       font-size: 11px;
       transform: scale(calc(11 / 12));
       color: rgba(white, 0.5);
@@ -62,7 +67,7 @@ $primary: #00a3ff;
         background-color: white;
       }
     }
-    &:not([class*="disabled"]) {
+    &:not([class*='disabled']) {
       &:hover {
         color: black;
       }
@@ -74,7 +79,7 @@ $primary: #00a3ff;
     @apply rounded-full;
   }
   .react-datepicker__month-container {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
   .react-datepicker__month {
     margin: 0;
@@ -103,7 +108,7 @@ $primary: #00a3ff;
       line-height: 24px;
       margin: 0 !important;
       color: white;
-      &:not([class$="--disabled"]) {
+      &:not([class$='--disabled']) {
         &:hover {
           color: black;
         }

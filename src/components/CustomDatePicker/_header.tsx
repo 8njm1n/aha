@@ -38,7 +38,7 @@ function Header(
         </button>
         <button
           onClick={() => setShowYearPicker(!showYearPicker)}
-          className="text-base"
+          className="text-base mb-[3px]"
         >
           {moment(date).format(showYearPicker ? 'YYYY' : 'MMMM YYYY')}
         </button>
