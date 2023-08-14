@@ -355,6 +355,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      ubuntu: ['Ubuntu', 'sans-serif'],
       sans: [
         'ui-sans-serif',
         'system-ui',
@@ -391,8 +392,8 @@ module.exports = {
       ],
     },
     fontSize: {
-      xs: ['0.75rem', { lineHeight: '1rem' }],
-      sm: ['0.875rem', { lineHeight: '1.25rem' }],
+      xs: ['0.75rem', { lineHeight: '1.5' }],
+      sm: ['0.875rem', { lineHeight: '1.5', letterSpacing: '0.25px' }],
       base: ['1rem', { lineHeight: '1.5rem' }],
       lg: ['1.125rem', { lineHeight: '1.75rem' }],
       xl: ['1.25rem', { lineHeight: '1.75rem' }],
