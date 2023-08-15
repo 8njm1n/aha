@@ -19,6 +19,7 @@ Here's a glimpse of what the project looks like:
 ![Demo Image](https://github.com/8njm1n/aha/blob/main/public/images/demo.png?raw=true)
 
 You can interact with the live demo [here](https://8njm1n.github.io/aha/).
+Compare to the design [here](https://www.figma.com/file/zsDbwWViGdNDqDltHGMNTP/Front-end-Exam---Benjamin?type=design&node-id=6083%3A309&mode=design&t=6l8vLcVTkXZDn1uS-1).
 
 ## Cloning and Installation
 
