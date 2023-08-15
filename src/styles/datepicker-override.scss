@@ -19,7 +19,7 @@ $primary: #00a3ff;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   border: none;
-
+  min-width: 320px;
   .react-datepicker__triangle {
     display: none;
   }
@@ -79,6 +79,7 @@ $primary: #00a3ff;
     @apply rounded-full;
   }
   .react-datepicker__month-container {
+    width: 100%;
     margin-bottom: 12px;
   }
   .react-datepicker__month {
@@ -86,6 +87,9 @@ $primary: #00a3ff;
   }
 
   // year picker
+  .react-datepicker__year {
+    margin: initial;
+  }
   .react-datepicker__year-text--keyboard-selected {
     color: white !important;
     background-color: $primary !important;
@@ -97,9 +101,10 @@ $primary: #00a3ff;
     font-weight: initial;
   }
   .react-datepicker__year-wrapper {
-    max-width: 240px;
+    max-width: 271px;
     row-gap: 24px;
-
+    column-gap: 9px;
+    margin: 18px auto 27px;
     @apply justify-center text-base;
     .react-datepicker__year-text {
       @apply rounded-sm;
@@ -115,4 +120,10 @@ $primary: #00a3ff;
       }
     }
   }
+}
+.react-datepicker__children-container {
+  width: initial;
+  margin: initial;
+  padding-right: initial;
+  padding-left: initial;
 }
