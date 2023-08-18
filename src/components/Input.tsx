@@ -33,16 +33,14 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
         type={type}
         placeholder={placeholder}
       />
-      {type==='password'&&<PasswordMask length={value?.length} />}
+      {type === 'password' && <PasswordMask length={value?.length} />}
     </div>
   );
 });
 
 const PasswordMask = (props: { length?: number }) => (
   <div className="password-mask absolute top-0 left-0 right-0 bottom-0 px-3 py-5 pointer-events-none tracking-[0.15px]">
-    {Array(props.length)
-      .fill(true)
-      .map(() => '*')}
+    {'*'.repeat(props?.length ?? 0)}
   </div>
 );
 
