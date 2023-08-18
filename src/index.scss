@@ -33,14 +33,6 @@
           @include shadow-outline(#00a3ff);
         }
       }
-      &[type='password'] {
-        &::placeholder {
-          letter-spacing: initial;
-        }
-        letter-spacing: 2.15px;
-        caret-color: white;
-        color: transparent;
-      }
     }
   }
 }
