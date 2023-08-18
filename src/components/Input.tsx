@@ -33,7 +33,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
         type={type}
         placeholder={placeholder}
       />
-      <PasswordMask length={value?.length} />
+      {type==='password'&&<PasswordMask length={value?.length} />}
     </div>
   );
 });
